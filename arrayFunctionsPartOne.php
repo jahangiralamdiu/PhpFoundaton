@@ -63,3 +63,8 @@ $array1 = array("a" => "green", "b" => "brown", "c" => "blue", "red");
 $array2 = array("a" => "green", "yellow", "red");
 $result = array_diff_assoc($array1, $array2);
 print_r($result);
+
+$array3 = array('blue'  => 1, 'red'  => 2, 'green'  => 3, 'purple' => 4);
+$array4 = array('green' => 5, 'blue' => 6, 'yellow' => 7, 'cyan'   => 8);
+
+var_dump(array_diff_key($array3, $array4));
