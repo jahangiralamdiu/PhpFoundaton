@@ -5,47 +5,64 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$mark =32;
 
+
+function getGrade($mark )
+{
+    
 if($mark>100)
 {
-    echo "The input is wrong";
+    $grade = "Wrong";
+    //return $grade;
 }
 
 else if($mark>=80)
 {
-    echo "The grade is A+";
+    $grade = "A+";
+    //return $grade;
+    
 }
 
 else if ($mark>=70)
 {
-    echo "The grade is A";
+    $grade = "A";
+    //return $grade;
 }
 
 
 else if($mark>=60)
 {
-    echo "The grade is A-";
+     $grade = "A-";
+    //return $grade;
 }
 
 else if($mark>=50)
 {
-    echo "The grade is B";
+     $grade = "B";
+    //return $grade;
 }
 
 else if($mark>=40)
 {
-    echo "The grade is C";
+    $grade = "C";
+    //return $grade;
 }
 
 else if($mark>=33)
 {
-    echo "The grade is D";
+     $grade = "D";
+    //return $grade;
   
 }
 
 else if($mark<=32)
 {
-    echo "The grade is F";
-    
+     $grade = "F";
+    //return $grade;
 }
+
+return $grade;
+
+}
+
+echo getGrade( 58);
