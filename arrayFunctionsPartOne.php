@@ -38,6 +38,16 @@ $records = array(
         'last_name' => 'Doe',
     )
 );
+
+echo "<br/>";
  
 $first_names = array_column($records, 'first_name');
 print_r($first_names);
+
+$a = array('green', 'red', 'yellow');
+$b = array('avocado', 'apple', 'banana');
+$c = array_combine($a, $b);
+
+print_r($c);
+
+echo "<br/>";
