@@ -27,3 +27,9 @@ echo "</pre>"; //The Out put is Jahangir Alam
 $str2=01011110;
 
 echo bin2hex($str2); 
+
+//Function chunk_split()
+
+$str3="JahangirAlam";
+echo "<br>";
+echo chunk_split($str3, 8);
