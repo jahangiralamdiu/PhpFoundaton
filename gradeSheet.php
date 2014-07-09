@@ -5,42 +5,47 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$mark =112;
+$mark =32;
 
-if($mark<=32)
+if($mark>100)
 {
-    echo "The grade is F";
+    echo "The input is wrong";
 }
 
-else if($mark<40 && $mark>=33)
+else if($mark>=80)
 {
-    echo "The grade is D";
+    echo "The grade is A+";
 }
 
-else if($mark<50 && $mark>=40)
-{
-    echo "The grade is C";
-}
-
-else if($mark<60 && $mark>=50)
-{
-    echo "The grade is B";
-}
-
-else if($mark<70 && $mark>=60)
-{
-    echo "The grade is A-";
-}
-
-else if ($mark<80 && $mark>=70)
+else if ($mark>=70)
 {
     echo "The grade is A";
 }
 
-else if($mark<=100 && $mark>=80)
+
+else if($mark>=60)
 {
-    echo "The grade is A+";
+    echo "The grade is A-";
 }
- else {
-     echo "Wrong input";
+
+else if($mark>=50)
+{
+    echo "The grade is B";
+}
+
+else if($mark>=40)
+{
+    echo "The grade is C";
+}
+
+else if($mark>=33)
+{
+    echo "The grade is D";
+  
+}
+
+else if($mark<=32)
+{
+    echo "The grade is F";
+    
 }
