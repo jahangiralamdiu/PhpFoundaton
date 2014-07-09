@@ -37,3 +37,9 @@ echo "<br>";
 
 //Function convert_uudecode
 echo convert_uudecode("+22!L;W9E(%!(4\"$`\n`");
+
+//Function convert_uudecode convert_uuencode()
+
+$some_string = "test\ntext text\r\n";
+
+echo convert_uuencode($some_string);
