@@ -58,3 +58,7 @@ foreach (count_chars($data, 1) as $i => $val) {
 
 $input_array = array("FirSt" => 1, "SecOnd" => 4);
 print_r(array_change_key_case($input_array, CASE_UPPER));
+
+$input_array2 = array('a', 'b', 'c', 'd', 'e');
+print_r(array_chunk($input_array2, 2));
+print_r(array_chunk($input_array2, 2, true));
