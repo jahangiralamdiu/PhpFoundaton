@@ -53,3 +53,8 @@ $data = "Two Ts and one F.";
 foreach (count_chars($data, 1) as $i => $val) {
    echo "There were $val instance(s) of \"" , chr($i) , "\" in the string.\n";
 }
+
+//Function array_change_key_case
+
+$input_array = array("FirSt" => 1, "SecOnd" => 4);
+print_r(array_change_key_case($input_array, CASE_UPPER));
