@@ -33,3 +33,7 @@ echo bin2hex($str2);
 $str3="JahangirAlam";
 echo "<br>";
 echo chunk_split($str3, 8);
+echo "<br>";
+
+//Function convert_uudecode
+echo convert_uudecode("+22!L;W9E(%!(4\"$`\n`");
