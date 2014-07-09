@@ -17,4 +17,16 @@ echo $z."<br />";
 echo $a."<br />";
 echo $b."<br />";
 
+$ab = 5;
+
+echo "<br>";
+echo (bool) $ab;
+
+echo (int) '123';
+
+echo (int) 'abc';
+echo (int) 'abc123';
+
+
+
 
