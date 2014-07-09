@@ -37,9 +37,19 @@ echo "<br>";
 
 //Function convert_uudecode
 echo convert_uudecode("+22!L;W9E(%!(4\"$`\n`");
+echo "<br>";
 
 //Function convert_uudecode convert_uuencode()
 
 $some_string = "test\ntext text\r\n";
 
 echo convert_uuencode($some_string);
+echo "<br>";
+
+//Function count_chars()
+
+$data = "Two Ts and one F.";
+
+foreach (count_chars($data, 1) as $i => $val) {
+   echo "There were $val instance(s) of \"" , chr($i) , "\" in the string.\n";
+}
