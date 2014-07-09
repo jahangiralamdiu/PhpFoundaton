@@ -26,4 +26,4 @@ echo "</pre>"; //The Out put is Jahangir Alam
 
 $str2=01011110;
 
-echo bin2hex($str2);
+echo bin2hex($str2); 
