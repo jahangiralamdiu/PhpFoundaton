@@ -17,7 +17,7 @@ and open the template in the editor.
             
            ?
            ?
-        }
+        
         ?>
     </body>
 </html>
