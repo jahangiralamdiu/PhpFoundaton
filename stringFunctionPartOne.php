@@ -8,8 +8,22 @@
 
 //Function name chr($ascii)
 
-$str = "The String is ended by : ";
+$str = "The String is ended by the first letter of English alphabet : ";
 
 $str.=chr(65);
 
 echo $str;
+
+//Function name chop()
+
+echo "<pre>";
+echo chop("   Jahangir   ");//right spaces are eliminated
+echo "&nbsp;";
+echo chop("Alam257444", "0..9");
+echo "</pre>"; //The Out put is Jahangir Alam
+
+//Function name bin2hex()
+
+$str2=01011110;
+
+echo bin2hex($str2);
