@@ -10,11 +10,12 @@
 function getTitleAndStar ($type="")
 {
     $keyValue = 0;
+    $filmTitle = "";    
     
 $films = array(
-   "genres" => array("comedy", "tragedy", "action", "romance"),
-    "film_titles" => array("Big", "Star War", "Titanic", "French Key"),
-    "stars" => array("Bill Murry", "Mark Hammels", "Leonard Deaprio", "Cate Blanchett"),
+   "genres" => array("comedy", "tragedy", "romance", "action"),
+    "film_titles" => array("Big", "Star War", "French Key", "Titanic",),
+    "stars" => array("Bill Murry", "Mark Hammels",  "Cate Blanchett", "Leonard Deaprio"),
     
 );
 
@@ -35,9 +36,14 @@ foreach ($films as $fkey => $first) {
   
 }
 
-  echo "Film Title ".$films['film_titles'][$key];
+  echo "Film Title: ".$films['film_titles'][$keyValue];
   echo "<br/>";
-  echo "Film Star ".$films['stars'][$key];
+  echo "Film Star: ".$films['stars'][$keyValue];
 
 }
-getTitleAndStar ("tragedy");
+
+
+function printTitleAndStar()
+{
+    getTitleAndStar ("action");
+}
