@@ -15,14 +15,18 @@ class User {
     
     function getName()
     {
-        return "FTFL2";
+        return $this->name;
     }
     
       
 }
  
 $user = new User();
- 
+ $user2 = new User();
+ $user3 = new User();
 var_dump($user);
 echo $user->name;
 echo $user->getName();
+
+echo $user->name="Jahangir";
+echo $user2->name;
