@@ -6,11 +6,9 @@
  * and open the template in the editor.
  */
 
-
-function getTitleAndStar ($type="")
+function getTitle ($genree="")
 {
     $keyValue = 0;
-    $filmTitle = "";    
     
 $films = array(
    "genres" => array("comedy", "tragedy", "romance", "action"),
@@ -25,7 +23,7 @@ foreach ($films as $fkey => $first) {
     {
         foreach ($first as $key => $second)
         {
-            if($second==$type)
+            if($second==$genree)
             {
                $keyValue=$key; 
                
@@ -35,15 +33,51 @@ foreach ($films as $fkey => $first) {
     }
   
 }
+$filmTitle = $films['film_titles'][$keyValue];
+ return $filmTitle;
 
-  echo "Film Title: ".$films['film_titles'][$keyValue];
-  echo "<br/>";
-  echo "Film Star: ".$films['stars'][$keyValue];
+}
+
+
+function getStar ($genree="")
+{
+    $keyValue = 0;
+    
+$films = array(
+   "genres" => array("comedy", "tragedy", "romance", "action"),
+    "film_titles" => array("Big", "Star War", "French Key", "Titanic",),
+    "stars" => array("Bill Murry", "Mark Hammels",  "Cate Blanchett", "Leonard Deaprio"),
+    
+);
+
+foreach ($films as $fkey => $first) {
+    
+    if($fkey=="genres")
+    {
+        foreach ($first as $key => $second)
+        {
+            if($second==$genree)
+            {
+               $keyValue=$key; 
+               
+            }
+            
+        }
+    }
+  
+}
+  $starWithSpace = strtolower ( $films['stars'][$keyValue]);
+  $star = str_replace(' ',"-",$starWithSpace);
+ return $star;
 
 }
 
 
 function printTitleAndStar()
 {
-    getTitleAndStar ("action");
+  echo  "Film Title is : ".getTitle ("action");
+  echo "<br/>";
+  echo "The Star Name is : ".getStar ("action");
 }
+
+printTitleAndStar();
