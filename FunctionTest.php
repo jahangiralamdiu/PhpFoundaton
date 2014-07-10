@@ -17,13 +17,13 @@ $films = array(
     
 );
 
-foreach ($films as $fkey => $first) {
+foreach ($films as $fkey => $firstValue) {
     
     if($fkey=="genres")
     {
-        foreach ($first as $key => $second)
+        foreach ($firstValue as $key => $secondValue)
         {
-            if($second==$genree)
+            if($secondValue==$genree)
             {
                $keyValue=$key; 
                
@@ -51,13 +51,13 @@ $films = array(
     
 );
 
-foreach ($films as $fkey => $first) {
+foreach ($films as $fkey => $firstValue) {
     
     if($fkey=="genres")
     {
-        foreach ($first as $key => $second)
+        foreach ($firstValue as $key => $secondValue)
         {
-            if($second==$genree)
+            if($secondValue==$genree)
             {
                $keyValue=$key; 
                
