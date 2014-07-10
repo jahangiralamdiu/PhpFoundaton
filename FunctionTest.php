@@ -35,7 +35,9 @@ foreach ($films as $fkey => $first) {
   
 }
 
-  echo $films['film_titles'][$key];
+  echo "Film Title ".$films['film_titles'][$key];
+  echo "<br/>";
+  echo "Film Star ".$films['stars'][$key];
 
 }
 getTitleAndStar ("tragedy");
