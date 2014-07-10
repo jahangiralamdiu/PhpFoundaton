@@ -7,8 +7,9 @@
  */
 
 
-function getTitleAndStar ($genre="")
+function getTitleAndStar ($type="")
 {
+    $keyValue = 0;
     
 $films = array(
    "genres" => array("comedy", "tragedy", "action", "romance"),
@@ -16,6 +17,25 @@ $films = array(
     "stars" => array("Bill Murry", "Mark Hammels", "Leonard Deaprio", "Cate Blanchett"),
     
 );
-    echo $films['genres'][0];
+
+foreach ($films as $fkey => $first) {
+    
+    if($fkey=="genres")
+    {
+        foreach ($first as $key => $second)
+        {
+            if($second==$type)
+            {
+               $keyValue=$key; 
+               
+            }
+            
+        }
+    }
+  
 }
-getTitleAndStar ();
+
+  echo $films['film_titles'][$key];
+
+}
+getTitleAndStar ("tragedy");
