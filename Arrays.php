@@ -14,8 +14,8 @@ print_r($cars);
 echo "</pre>";
 
 
-foreach($cars as $car)
+foreach($cars as $key=>$car)
 {
-    echo $car;
+    echo $key."--".$car;
     echo "<br / >";
 }
