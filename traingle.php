@@ -14,3 +14,8 @@ for ($i = 0; $i <= 5; $i++)
     }
     echo "<br>";
 }
+$arryOne = array("Result");
+$arrayTwo= array ($arryOne);
+$array3D = array($arrayTwo);
+
+echo $array3D[0][0][0];

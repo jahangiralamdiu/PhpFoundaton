@@ -12,3 +12,10 @@ echo "<pre>";
 print_r($cars);
 
 echo "</pre>";
+
+
+foreach($cars as $car)
+{
+    echo $car;
+    echo "<br / >";
+}
