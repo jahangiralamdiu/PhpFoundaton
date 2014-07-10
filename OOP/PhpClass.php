@@ -13,6 +13,11 @@ class User {
     
     var $email = '';
     
+    function getName()
+    {
+        return "FTFL2";
+    }
+    
       
 }
  
@@ -20,3 +25,4 @@ $user = new User();
  
 var_dump($user);
 echo $user->name;
+echo $user->getName();
