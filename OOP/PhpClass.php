@@ -29,4 +29,5 @@ echo $user->name;
 echo $user->getName();
 
 echo $user->name="Jahangir";
+
 echo $user2->name;
